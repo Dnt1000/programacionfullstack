@@ -18,12 +18,13 @@
         <h2>Contactarse</h2>
         <!-- formulario de contacto -->
         <form action="/enviar" method="POST">
-            <input type="text" name="nombre" required>
             <label for="nombre">Ingresa tu nombre</label>
-            <input type="email" name="email" required>
+            <input type="text" name="nombre" required>
             <label for="email">Ingresa tu email</label>
-            <textarea name="mensaje"></textarea>
+            <input type="email" name="email" required>
             <label for="mensaje">Ponerse en contacto</label>
+            <textarea name="mensaje"></textarea>
+            <button type="submit">Enviar</button>
         </form>
     
         <h2>Lista de habilidades</h2>
