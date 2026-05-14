@@ -1,0 +1,240 @@
+body{
+    display: grid;
+    grid-template-areas: "header header"
+                         "aside  main"
+                         "footer footer";
+    grid-template-rows: 150px 0.9fr 40px;
+    grid-template-columns: 300px 1fr;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(15, 23, 42);
+    font-family: sans-serif;
+    gap: 10px;
+}
+
+/*header */
+img{
+    height: 120px;
+    width: auto;
+}
+header {
+    grid-area: header;
+    display: flex;
+    background: linear-gradient(to right, #5f61e4,#5956EB );
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+}
+.izquierda{
+    display: flex;
+    align-items: center;
+}
+.derecha{
+    margin-right: 25px;
+
+}
+button{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 40px;
+}
+
+/* sidebar */
+aside  {
+    grid-area: aside;
+    background-color: rgb(30, 41, 59);
+    opacity: 80%;
+    border-radius: 25px;
+    padding: 15px 20px;
+}
+li{
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 10px;
+    width: 80%;
+    background-color: #7b7cbd;
+}
+li:first-child{ 
+    background: linear-gradient(to right, #5254cc,#5956EB);
+    opacity: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+/* 
+    <main>
+        <div class="card">
+            <div class="card-header">
+                <h1>Ventas</h1>
+                <div class="pctventas">+12%</div>
+            </div>
+            <div class="total">1,234</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h1>Usuarios</h1>
+                <div class="pctusuarios">+8%</div>
+            </div>
+            <div class="total">567</div>
+        </div>
+        <div class="card">
+                <div class="card-header">
+                    <h1>Pedidos</h1>
+                    <div class="pctpedidos">+5%</div>
+                </div>
+            <div class="total">89</div>
+        </div>
+    </main>
+   */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* una fraccion de el main para cada columna, ventas usuarios y pedidos */
+    gap: 25px;
+    padding: 25px;
+    background-color: rgba(17, 24, 39, 0.1);
+    border-radius: 10px;
+}   
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+    width: 100%;
+}
+.card h1 {
+    margin: 0;
+    font-size: 16px;
+    color: #a0a0a0;
+}
+.card{
+    background-color: rgba(128, 128, 128, 0.2);
+    /* color: grey = rgb(128, 128, 128) */
+    font-weight: bold;
+    opacity: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+header h1, i{
+    color: white;
+}
+h1{
+    font-size: 20px;
+}
+.pctventas {
+    background: rgba(36, 206, 50, 0.15); 
+    /* rgba = red green blue Alpha (opacity) */
+    color: #24ce32;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.pctusuarios {
+    background: rgba(163, 107, 255, 0.15);
+    color: #a36bff;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.pctpedidos {
+    background: rgba(255, 165, 0, 0.15);
+    color: #ffa500;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.total{
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.card:nth-child(1) .total{
+    color: rgb(127, 184, 255);
+}
+
+.card:nth-child(1) .total i{
+    color: rgb(127, 184, 255);
+}
+
+.card:nth-child(2) .total{
+    color: rgb(197, 155, 255);
+}
+
+.card:nth-child(2) .total i{
+    color: rgb(197, 155, 255);
+}
+
+.card:nth-child(3) .total{
+    color: rgb(255, 194, 102);
+}
+
+.card:nth-child(3) .total i{
+    color: rgb(255, 194, 102);
+}
+/*footer*/
+footer {
+    grid-area: footer;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.2);
+    color: rgb(189, 185, 185);
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px;
+}
+/*
+<body>
+    <header>
+        <div class="izquierda">
+            <img src="cubito.png">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="derecha">
+            <button type="button"><i class="fa-solid fa-bell"></i></button>
+            <button type="button"><i class="fa-solid fa-gear"></i></button>
+        </div>
+    </header>
+    <aside>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="usuarios.html">Usuarios</a></li>
+            <li><a href="productos.html">Productos</a></li>
+        </ul>
+    </aside>
+    <main>
+        <div class="card">
+            <div class="card-header">
+                <h1>Ventas</h1>
+                <div class="pctventas">+12%</div>
+            </div>
+            <div class="total">1,234</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h1>Usuarios</h1>
+                <div class="pctusuarios">+8%</div>
+            </div>
+            <div class="total">567</div>
+        </div>
+        <div class="card">
+                <div class="card-header">
+                    <h1>Pedidos</h1>
+                    <div class="pctpedidos">+5%</div>
+                </div>
+            <div class="total">89</div>
+        </div>
+    </main>
+    <footer>©2026 Dashboard Layout</footer>
+</body>
+*/
