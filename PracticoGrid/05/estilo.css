@@ -1,0 +1,326 @@
+body {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "aside1 main aside2"
+                         "footer footer footer";
+    grid-template-rows: 120px 1fr 70px;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(37, 46, 64);
+}
+
+/* HEADER :p */
+img{
+    height: 90px;
+    width: auto;
+}
+header{
+    grid-area: header;
+    background: linear-gradient(to right, #5f61e4,#5956EB );
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.izquierda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.derecha{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+button{
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+input {
+    border: none;
+    border-radius: 25px;
+    width: 50%;
+}
+
+/* aside 1 */
+.aside1{
+    grid-area: aside1;
+    background-color: rgba(128, 128, 128, 0.2);
+    font-weight: bold;
+    opacity: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+li{
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 10px;
+    width: 80%;
+    background-color: #7b7cbd;
+}
+li:first-child{ 
+    background: linear-gradient(to right, #5254cc,#5956EB);
+    opacity: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+/* MAINN :D */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* una fraccion de el main para cada columna, ventas usuarios y pedidos */
+    gap: 25px;
+    padding: 25px;
+    background-color: rgba(25, 38, 56, 0.6);
+    border-radius: 10px;
+}   
+.Ventas, .Usuarios, .Pedidos, .Tasa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+}
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    flex: 1;
+}
+.Ventas .total{
+    color: rgb(127, 184, 255);
+}
+
+.Usuarios .total{
+    color: rgb(197, 155, 255);
+}
+.Pedidos .total{
+    color: rgb(255, 194, 102);
+}
+.Tasa .total{
+    color: rgb(92, 255, 160);
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pct{
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.Ventas .pct{
+    background-color: rgba(127, 184, 255, 0.2);
+    color: rgb(127, 184, 255);
+}
+
+.Usuarios .pct{
+    background-color: rgba(197, 155, 255, 0.2);
+    color: rgb(197, 155, 255);
+}
+
+.Pedidos .pct{
+    background-color: rgba(255, 194, 102, 0.2);
+    color: rgb(255, 194, 102);
+}
+
+.Tasa .pct{
+    background-color: rgba(92, 255, 160, 0.2);
+    color: rgb(92, 255, 160);
+}
+/* aside 2 */
+.aside2 {
+    grid-area: aside2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+.notificacion{
+    display: flex;
+    align-items: center;
+    border-left: 4px solid rgb(62, 111, 214);
+    border-radius: 10px;
+    padding: 15px;
+    gap: 10px;
+}
+.texto-notificacion{
+    display: flex;
+    flex-direction: column;
+}
+.texto-notificacion h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    gap: 10px;
+}
+.texto-notificacion h2{
+    font-size: 20px;
+}
+.notificacion i{
+    font-size: 30px;
+    color: rgb(62, 111, 214);
+}
+.data{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.foto{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+.data:nth-child(2) .foto{
+    background-color: #8b5cf6;
+}
+
+.data:nth-child(3) .foto{
+    background-color: #10b981;
+}
+
+.data:nth-child(4) .foto{
+    background-color: #f59e0b;
+}
+.aside2 h2{
+    font-size: 18px;
+    color: rgb(180, 180, 180);
+    font-weight: normal;
+    margin: 5px 0 0 0;
+}
+.data h1{
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+.aside2 h1{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+.notificacion i{
+    margin-right: 20px;
+}
+/* footer */
+
+footer {
+    grid-area: footer;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.2);
+    color: rgb(189, 185, 185);
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px;
+}
+/*
+<body>
+    <header>
+        <div class="izquierda">
+            <img src="cubito.png">
+            <h1>Panel de control</h1>
+        </div>
+        <div class="derecha">
+            <input type="text" name="searchbar" id="searchbar">
+            <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+    <aside class="aside1">
+        <ul>
+            <li><a href="Dashboard.html">Dashboard</a></li>
+            <li><a href="Reportes.html">Reportes</a></li>
+            <li><a href="Usuarios.html">Usuarios</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="Configuracion.html">Configuracion</a></li>
+        </ul>
+    </aside>
+    <main>
+        <div class="Ventas">
+            <div class="card-header">
+                <h1>Ventas Totales</h1>
+                <div class="pct">+12%</div>
+            </div>
+            <div class="total"><i class="fa-solid fa-cart-shopping"></i> 24,580$</div>
+        </div>
+        <div class="Usuarios">
+            <div class="card-header">
+                <h1>Usuarios Activos</h1>
+                <div class="pct">+8%</div>
+            </div>
+            <div class="total"><i class="fa-solid fa-user"></i> 1,847</div>
+        </div>
+        <div class="Pedidos">
+            <div class="card-header">
+                <h1>Pedidos Pendientes</h1>
+                <div class="pct">+5%</div>
+            </div>
+            <div class="total"><i class="fa-solid fa-truck"></i> 89</div>
+        </div>
+        <div class="Tasa">
+            <div class="card-header">
+                <h1>Tasa de Conversion</h1>
+                <div class="pct">+3%</div>
+            </div>
+            <div class="total"><i class="fa-solid fa-arrow-trend-up"></i> 4.5%</div>
+        </div>
+    </main>
+    <aside class="aside2">
+        <div class="notificacion">
+            <i class="fa-solid fa-circle-info"></i>
+            <div class="texto-notificacion">
+                <h1>Nuevo pedido</h1>
+                <h2>Hace 5 minutos</h2>
+            </div>
+        </div>
+        <div class="data">
+            <div class="foto">GV</div>
+            <div class="info">
+                <h1>Gabriel V.</h1>
+                <h2>Actualizó perfil</h2>
+            </div>
+        </div>
+        <div class="data">
+            <div class="foto">MA</div>
+            <div class="info">
+                <h1>María A.</h1>
+                <h2>Completó compra</h2>
+            </div>
+        </div>
+        <div class="data">
+            <div class="foto">JP</div>
+            <div class="info">
+                <h1> Juan P.</h1>
+                <h2>Nuevo registro</h2>
+            </div>
+        </div>
+    </aside>
+    <footer>©2026 Dashboard - Programación Full Stack</footer>
+</body>
+
+*/

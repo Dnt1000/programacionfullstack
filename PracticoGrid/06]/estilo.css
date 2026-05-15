@@ -1,0 +1,330 @@
+body {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-columns: 3fr 1fr;
+    font-family: sans-serif;
+    height: 100vh;
+    background: rgb(21, 33, 61);
+    padding: 15px;
+    gap: 15px;
+}
+header{
+    grid-area: header;
+    background: linear-gradient(to right,  rgb(23, 147, 209),rgb(15, 134, 198)  );
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+footer {
+    grid-area: footer;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.2);
+    color: rgb(189, 185, 185);
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px;
+}
+.izquierda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fa-chevron-left{
+    margin-left: 30px;
+    font-size: 30px;
+}
+.fa-chevron-right{
+    margin-right: 30px;
+    font-size: 30px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+}
+.derecha{
+    display: flex;
+    flex-direction: row;    
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    margin-right: 30px;
+}
+.derecha a{
+    text-decoration: none;
+    color: rgb(19, 96, 137);
+    font-size: 20px;
+}
+.derecha a:first-child{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size:20px;
+    background: linear-gradient(to right, rgb(28, 174, 252), rgb(42, 129, 175));
+    padding: 5px 5px;
+}
+/* MAIN */
+main{
+    grid-area: main;
+    display: grid;
+    gap: 20px;
+}
+/* izquierda main */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 15px;
+    gap: 20px;
+}
+.card{
+    background: rgb(30, 41, 59);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card h3{
+    color: white;
+    font-size: 28px;
+    margin-top: 20px;
+}
+.card p{
+    color: rgb(148, 163, 184);
+    line-height: 1.5;
+}
+.aside-card:first-child{
+    height: 35%;
+}
+.aside-card:last-child{
+    height: 65%;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.tag{
+    background: rgb(51, 65, 85);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.time{
+    color: rgb(148, 163, 184);
+}
+/* derecha main */
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgb(48, 59, 71);
+    border-radius: 10px;
+    padding: 10px;
+}
+.aside-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+     background: rgb(41, 68, 102);
+     border-radius: 15px;
+     padding: 50px;
+}
+.aside-card ul{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.aside-card li{
+    margin-top: 15px;
+    background-color: rgb(51, 65, 85);
+    padding: 12px;
+    border-radius: 15px;
+}
+.aside-card h3{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+.estadistica i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.fa-arrow-trend-up{
+    color: aqua;
+    font-size: 25px;
+}
+.fa-eye{
+    background: linear-gradient(to right,rgb(33, 86, 165),rgb(14, 116, 144));
+    opacity: 60%;
+}
+.fa-users{
+    background: linear-gradient(to right, rgb(168, 85, 247),rgb(109, 40, 217));
+}
+
+.info h4{
+    margin: 0;
+    font-size: 22px;
+}
+
+.info p{
+    margin: 5px 0 0 0;
+    color: rgb(148, 163, 184);
+}
+.estadistica{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.fa-tag{
+    color: aqua;
+}
+.aside-card ul{
+    margin-top: 20px;
+}
+.icono i{
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    color: white;
+}
+.fa-file{
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+}
+
+.fa-code-branch{
+    background: linear-gradient(to right, #8b5cf6, #7c3aed);
+}
+
+.fa-mobile-screen{
+    background: linear-gradient(to right, #10b981, #059669);
+}
+
+/*tablet, max-width = si se hace mas chica la pantalla */
+@media (max-width:1024px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    aside{
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width:768px) {
+    body{
+        grid-template-areas: "header"
+                             "main"
+                             "aside"
+                             "footer";
+        grid-template-columns: 1fr;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .derecha{
+        gap: 30px;
+    }
+
+}
+/*
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-chevron-right"></i>
+            <h2>TechBlog</h2>
+        </div>
+
+        <nav class="derecha">
+            <a href="#Inicio">Inicio</a>
+            <a href="#Tutoriales">Tutoriales</a>
+            <a href="#Recursos">Recursos</a>
+            <a href="#Contacto">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="cards">
+            <article class="card">
+                <div class="icono">
+                    <i class="fa-solid fa-file"></i>
+                </div>
+                <h3>Grid Avanzado</h3>
+                <p>Master CSS Grid con técnicas profesionales.</p>
+            </article>
+            <article class="card">
+                <div class="icono">
+                    <i class="fa-solid fa-code-branch"></i>
+                </div>
+                <h3>Flexbox vs Grid</h3>
+                <p>Cuándo usar cada uno y cómo combinarlos.</p>
+            </article>
+            <article class="card">
+                <div class="icono">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+
+                <h3>Responsive</h3>
+
+                <p>
+                    Técnicas modernas para diseño adaptable.
+                </p>
+            </article>
+        </section>
+        <aside>
+            <div class="aside-card">
+                <h3><i class="fa-solid fa-arrow-trend-up"></i> Estadísticas</h3>
+                <div class="estadistica">
+                    <i class="fa-solid fa-eye"></i>
+                <h4>12,547</h4>
+                <p>Visitas</p>
+            </div>
+                <div class="estadistica">
+                    <i class="fa-solid fa-users"></i>
+                <h4>3,241</h4>
+                <p>Usuarios</p>
+                </div>
+            </div>
+
+            <div class="aside-card">
+                <h3><i class="fa-solid fa-tag"></i>Categorías</h3>
+                <ul>
+                    <li>CSS Grid</li>
+                    <li>Flexbox</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </aside>
+        </main>
+        <footer>© 2026 TechBlog - Prof. Gabriel Vazquez</footer>
+</body>
+*/
