@@ -1,0 +1,10 @@
+section{
+    display: flex;
+    justify-content: space-around;
+}
+.caja{
+    margin-top: 40vh;
+    padding: 50px 50px;
+    background-color: rgb(201, 83, 152);
+    border-radius: 25px;
+}

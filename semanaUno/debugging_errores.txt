@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mi Portfolio</title>
+
+<body>
+<Header>
+<h1>Juan Pérez</h1>
+</header>
+<main>
+<p>Hola, soy estudiante de programación
+<p>Me gusta crear sitios web</p>
+</main>
+
+</html>
+
+Error 1
+
+Línea: 6
+Descripción: Falta cerrar la etiqueta <head> antes de abrir <body>.
+Corrección:
+</head>
+
+Error 2
+
+Línea: 12
+Descripción: Falta cerrar la etiqueta <p> en el primer párrafo.
+Corrección:
+<p>Hola, soy estudiante de programación</p>
+
+Error 3
+
+Línea: 15
+Descripción: Falta cerrar la etiqueta <body>.
+Corrección:
+</body>
+
+
+en la linea 8 hay un header con H en mayuscula pero el codigo funciona igual
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mi Portfolio</title>
+</head>
+<body>
+<Header>
+<h1>Juan Pérez</h1>
+</header>
+<main>
+<p>Hola, soy estudiante de programación</p>
+<p>Me gusta crear sitios web</p>
+</main>
+</body>
+</html>

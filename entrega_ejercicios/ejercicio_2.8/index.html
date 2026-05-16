@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Sobre Mi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Sobre Mi</h1>
+            <h2>Dante Gomez</h2>
+        </header>
+        <main>
+            <section>
+            <img src="foto.jpg">
+            <p>
+                Hola, soy Dante. Actualmente estoy estudiando y me interesa bastante todo lo que tenga que ver con la tecnología, sobre todo la programación y el desarrollo web.<br>
+                Me gusta aprender cosas nuevas y tratar de mejorar cada día, aunque a veces cueste. En mi tiempo libre suelo escuchar música, jugar videojuegos y estar con amigos.<br>
+                Mi idea es seguir creciendo en este camino y en algún momento poder trabajar de algo relacionado a esto.
+            </p>
+            </section>
+            <!-- Tabla horario semanal -->
+             <section>
+            <h3>Tabla Semanal</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>7:00 - 7:45</td>
+                        <td>Atención a clientes</td>
+                        <td>Consultas</td>
+                        <td>Atención a clientes</td>
+                        <td>Consultas</td>
+                        <td>Soporte técnico</td>
+                    </tr>
+
+                    <tr>
+                        <td>7:45 - 8:30</td>
+                        <td>Desarrollo</td>
+                        <td>Desarrollo</td>
+                        <td>Programación</td>
+                        <td>Programación</td>
+                        <td>Soporte técnico</td>
+                    </tr>
+
+                    <tr>
+                        <td>8:30 - 9:15</td>
+                        <td>Reuniones</td>
+                        <td>Atención a clientes</td>
+                        <td>Desarrollo</td>
+                        <td>Consultas</td>
+                        <td>Revisión de proyectos</td>
+                    </tr>
+
+                    <tr>
+                        <td>9:15 - 10:00</td>
+                        <td>Programación</td>
+                        <td>Programación</td>
+                        <td>Consultas</td>
+                        <td>Desarrollo</td>
+                        <td>Entrega de trabajos</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Habilidades</h3>
+            <ul>
+                <li>HTML (básico)</li>
+                <li>JavaScript (intermedio)</li>
+                <li>MySQL / Bases de datos (básico-intermedio)</li>
+                <li>CSS (básico)</li>
+                <li>Git / GitHub (básico)</li>
+            </ul>
+
+            </section>
+            <section>
+            <form action="/enviar" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+                <label for="texto">Mensaje</label>
+                <textarea name="texto"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+    </html>

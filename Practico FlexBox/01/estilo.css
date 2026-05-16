@@ -1,0 +1,27 @@
+ body{
+    background-color: rgb(25, 29, 49)
+ }
+ .contenedor{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 40vh;
+}
+.caja{
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size:x-large;
+    width: 150px;
+    text-align: center;
+    padding: 50px 50px;
+    background-color: rgb(133, 46, 121);
+}
+.caja:first-child{
+    background-color: rgb(56, 85, 180);
+}
+.caja:last-child{
+    background-color: aqua;
+}

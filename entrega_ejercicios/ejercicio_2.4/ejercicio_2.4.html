@@ -1,0 +1,46 @@
+<!DOCTYPE HTML> <!-- ya no me olvido máss -->
+<html lang="es">
+    <head>
+        <title>Mate Code</title>
+    </head>
+    <body>
+        <header>
+            <h1>Mate Code</h1>
+        </header>
+        <main>
+            <form action="/enviar">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+                <label>Numero de telefono</label>
+                <input type="tel" placeholder="123 456 789">
+                <label for="asunto">Asunto</label>
+                <select name="asunto" name="asunto">
+                    <option value="consulta">Consulta</option>
+                    <option value="informacion">Informacion</option>
+                    <option value="presupuesto">presupuesto</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje">Mensaje</textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+</html>
+
+<!--
+Requisitos del formulario:
+Nombre (text, required)
+Email (email, required)
+Teléfono (tel, placeholder)
+Asunto (select, 4 opciones)
+Mensaje (textarea)
+Botón de envío
+-->

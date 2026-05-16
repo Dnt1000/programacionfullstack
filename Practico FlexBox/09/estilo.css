@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+th a{
+    color: white;
+    text-decoration: none;
+}
+tbody{
+    font-size: small;
+    color: rgb(34, 34, 34);
+}
+tbody a{
+    text-decoration: none;
+    color: darkgray;
+}
+.carta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer{
+    margin-bottom: 50px;
+    text-decoration: none;
+    border-radius:15px ;
+    background-color: rgb(42, 74, 111);
+}
+img{
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    margin: auto 15px;
+}
+button{
+    border-radius: 3px;
+    padding: 7px 7px;
+    text-align: center;
+    font-size: 19px;
+    color: white;
+    margin: 5px;
+    border: none;
+    }
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+

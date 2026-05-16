@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 150px;
+}
+div{
+    padding: 50px 50px;
+    background-color: aqua;
+    margin: 20px;
+}

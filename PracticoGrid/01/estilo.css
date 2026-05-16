@@ -1,9 +1,52 @@
 body{
     display: grid;
-    grid-column: 25;
-    grid-row: ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+    height: 100vh;
+    padding: 20px;
 }
 .caja{
     background-color: aqua;
-    padding: 25px 25px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.caja:nth-child(1){
+    background: red;
+}
+
+.caja:nth-child(2){
+    background: orange;
+}
+
+.caja:nth-child(3){
+    background: green;
+}
+
+.caja:nth-child(4){
+    background: blue;
+}
+
+.caja:nth-child(5){
+    background: purple;
+}
+
+.caja:nth-child(6){
+    background: deeppink;
+}
+
+.caja:nth-child(7){
+    background: rgb(88, 180, 227);
+}
+
+.caja:nth-child(8){
+    background: limegreen;
+}
+
+.caja:nth-child(9){
+    background: orangered;
 }

@@ -1,0 +1,19 @@
+body{
+    color:rgba(255, 87, 51, 0.5);
+}
+h2{
+    color:blue;
+}
+.destacado{
+    background-color: yellow;
+    color:#099999;
+}
+#principal{
+    border: 2px solid black;
+    color: rgb(0, 255, 0);
+}
+/* class se puede reutilizar */
+/* id es unico */
+/* la diferencia es la cantidad de veces que se usa, 
+el class se reutiliza y el id no, es el identificador, es unico */
+

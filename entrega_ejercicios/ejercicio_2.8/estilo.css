@@ -1,0 +1,92 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+/* main */
+
+header{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #111;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-style: oblique;
+    opacity: 0.8;
+}
+
+img{
+    margin-top: 25px;
+    border-radius: 80px;
+    margin-bottom: 20px;
+    width: 150px;
+    border: 5px solid white;
+}
+
+p{
+    font-size: 18px;
+    background-color: #111;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+/* tabla */
+
+table{
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+table, td, th{
+    border: 1px solid #444;
+    color: white;
+    background-color: #111;
+    padding: 10px;
+}
+
+th{
+    background-color: #222;
+}
+
+section{
+    background-color: grey;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 10px;
+    width: fit-content;
+} 
+
+h3, ul{
+    color: white;
+}
+
+ul {
+    color: black;
+    font-size: 20px;
+    list-style: none;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+button{
+    margin-top: 10px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}

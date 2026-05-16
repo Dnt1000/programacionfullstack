@@ -1,0 +1,14 @@
+/* Primer elemento: ancho fijo
+Segundo elemento: ocupe el resto */
+body{
+    display: flex;
+    height: 100vh;
+}
+aside{
+    width: 200px;
+    background-color: rgb(146, 72, 144);
+}
+main{
+    flex: 1;
+    background-color: aqua;
+}

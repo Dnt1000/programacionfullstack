@@ -1,0 +1,10 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div{
+    padding: 50px 50px;
+    background-color: rgb(194, 76, 145);
+}
