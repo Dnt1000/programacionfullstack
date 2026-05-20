@@ -9,6 +9,7 @@ body {
     background: rgb(21, 33, 61);
     padding: 15px;
     gap: 15px;
+    color: white;
 }
 header{
     grid-area: header;
